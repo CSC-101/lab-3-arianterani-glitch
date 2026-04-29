@@ -20,7 +20,7 @@ print()
 
 def inc(m:int) -> int:
     return m + 1                             # Record, in order of the calls, each value of m and
-                                             # the corresponding return value.  [0,1] [1,2] [2,3]
+                                             # the corresponding return value.  [3,4], [4,5]
 
 
 def check(n:int) -> bool:
@@ -28,5 +28,5 @@ def check(n:int) -> bool:
                                              # the corresponding return value. 1 > 2 = False, 2 > 2 = False, 3 > 2 = True
 
 
-answer1 = [inc(x) for x in range(5) if check(x)]   # What is the value of answer? The answer = 3
+answer = [inc(x) for x in range(5) if check(x)]   # What is the value of answer? The answer = [4,5]
 print()
